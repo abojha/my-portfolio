@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import Card from "../components/Card";
 import ExperienceCard from "../components/ExperienceCard";
 import EducationCard from "../components/EducationCard";
-import Section from "../components/PageSection";
 import PageSection from "../components/PageSection";
 
 export default function Home() {
