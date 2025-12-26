@@ -1,0 +1,72 @@
+.education-section {
+  padding: 4rem 0;
+}
+
+.education-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Card */
+.education-card {
+  background: var(--ifm-card-background-color);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px rgba(0,0,0,0.12);
+}
+
+/* Degree */
+.education-degree {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Meta */
+.education-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.education-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Highlights */
+.education-highlights {
+  margin-top: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.education-highlights li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-meta {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}

@@ -1,0 +1,83 @@
+.skill-bubbles-section {
+  padding: 4rem 0;
+}
+
+.skill-bubbles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Bubble */
+.skill-bubble {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--ifm-card-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: var(--ifm-color-primary);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  cursor: default;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.skill-bubble:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.18);
+}
+
+/* Mobile tweak */
+@media (max-width: 480px) {
+  .skill-bubble {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+
+.skill-bubble-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tooltip text */
+.skill-tooltip {
+  position: absolute;
+  bottom: -38px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Tooltip arrow */
+.skill-tooltip::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent var(--ifm-color-primary) transparent;
+}
+
+/* Show on hover */
+.skill-bubble-wrapper:hover .skill-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}

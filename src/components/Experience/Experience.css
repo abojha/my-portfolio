@@ -1,0 +1,81 @@
+.experience-section {
+  padding: 4rem 0;
+}
+
+.experience-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Card */
+.experience-card {
+  background: var(--ifm-card-background-color);
+  border-radius: 16px;
+  padding: 1.8rem 2rem;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Left accent bar (timeline feel) */
+.experience-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--ifm-color-primary);
+  border-radius: 16px 0 0 16px;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Header */
+.experience-header h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Meta */
+.experience-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.experience-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Points */
+.experience-points {
+  margin-top: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.experience-points li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-meta {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
