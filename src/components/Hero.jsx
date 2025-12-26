@@ -39,7 +39,7 @@ export default function Hero() {
             <a href="https://github.com/abojha" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/abojha" target="_blank" rel="noreferrer">
+            <a href="https://linkedin.com/in/abhayojha0012" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
             <a href="https://instagram.com/abojha404" target="_blank" rel="noreferrer">

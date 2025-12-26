@@ -84,10 +84,10 @@ const config = {
       },
       navbar: {
         title: 'Abhay Ojha',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+        // logo: {
+        //   alt: 'My Site Logo',
+        //   src: 'img/logo.svg',
+        // },
         items: [
           // {
           //   type: 'docSidebar',
@@ -97,11 +97,11 @@ const config = {
           // },
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/about', label: 'About Me', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {

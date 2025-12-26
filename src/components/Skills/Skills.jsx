@@ -5,7 +5,11 @@ import {
   FaGitAlt,
   FaDocker,
   FaShieldAlt,
+  FaReact,
+  FaNodeJs,
+  
 } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
 import { SiCplusplus, SiDjango, SiPostgresql } from "react-icons/si";
 
 import "./Skills.css";
@@ -13,11 +17,11 @@ import "./Skills.css";
 const skills = [
   { icon: <FaPython />, label: "Python" },
   { icon: <SiDjango />, label: "Django" },
+  { icon: <FaReact />, label: "React" },
+  { icon: < FaNodeJs />, label: "Node Js" },
   { icon: <SiCplusplus />, label: "C / C++" },
-//   { icon: <FaLinux />, label: "Linux" },
-  { icon: <SiPostgresql />, label: "PostgreSQL" },
+  { icon: <DiMysql />, label: "SQL" },
   { icon: <FaGitAlt />, label: "Git" },
-  { icon: <FaDocker />, label: "Docker" },
   { icon: <FaShieldAlt />, label: "Security" },
 ];
 

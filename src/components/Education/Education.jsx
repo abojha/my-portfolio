@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUniversity, FaCalendarAlt } from "react-icons/fa";
+import { GiAchievement } from "react-icons/gi";
 
 import "./Education.css";
 
@@ -7,12 +8,14 @@ const educationData = [
   {
     degree: "M.Tech – Computer Science & Information Security",
     institute: "NIT Warangal",
-    duration: "2023 – 2025",
+    duration: "2024 – Present",
+    cgpa: 9.09,
   },
   {
     degree: "B.Tech – Computer Science",
-    institute: "XYZ Institute of Technology",
-    duration: "2019 – 2023",
+    institute: "Rajiv Gandhi Proudyogiki Vishwavidyalaya",
+    duration: "2020 – 2024",
+    cgpa: 8.83,
   },
 ];
 
@@ -26,7 +29,10 @@ export default function Education() {
           {educationData.map((edu, index) => (
             <div key={index} className="education-card">
               <h3 className="education-degree">{edu.degree}</h3>
-
+              <span className="education-cgpa">
+                <GiAchievement />
+                {edu.cgpa}
+              </span>
               <div className="education-meta">
                 <span>
                   <FaUniversity /> {edu.institute}

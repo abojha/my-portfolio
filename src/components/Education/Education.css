@@ -1,5 +1,5 @@
 .education-section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .education-title {
@@ -13,6 +13,14 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+
+
+
+
+
+
+
+
 
 /* Card */
 .education-card {
@@ -69,4 +77,31 @@
     flex-direction: column;
     gap: 0.4rem;
   }
+}
+
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* CGPA badge */
+.education-cgpa {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--ifm-color-primary);
+  white-space: nowrap;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .education-cgpa {
+  background: rgba(255, 255, 255, 0.08);
 }
