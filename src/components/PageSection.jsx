@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Section({ title, children }) {
+export default function PageSection({ title, children }) {
   return (
     <section className="padding-vert--sm">
       <div className="container">
