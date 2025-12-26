@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBuilding, FaCalendarAlt } from "react-icons/fa";
 
-import "./experience.css";
+import "./Experience.css";
 
 const experiences = [
   {
