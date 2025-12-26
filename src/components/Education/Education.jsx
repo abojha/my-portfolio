@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUniversity, FaCalendarAlt } from "react-icons/fa";
 
-import "./education.css";
+import "./Education.css";
 
 const educationData = [
   {
