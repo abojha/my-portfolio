@@ -16,12 +16,12 @@ export default function Hero() {
         </p>
 
         <div className="margin-top--lg">
-          <a
+          {/* <a
             className="button button--secondary button--lg margin-right--md"
             href="/projects"
           >
             View Projects
-          </a>
+          </a> */}
 
           <a
             className="button button--outline button--secondary button--lg"

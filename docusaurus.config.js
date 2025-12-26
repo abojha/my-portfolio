@@ -96,7 +96,6 @@ const config = {
           //   label: 'Tutorial',
           // },
           {to: '/blog', label: 'Blog', position: 'left'},
-           {to: '/projects', label: 'Projects', position: 'left'},
           {to: '/about', label: 'About Me', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
