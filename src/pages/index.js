@@ -4,13 +4,14 @@ import Card from "../components/Card";
 import ExperienceCard from "../components/ExperienceCard";
 import EducationCard from "../components/EducationCard";
 import Section from "../components/PageSection";
+import PageSection from "../components/PageSection";
 
 export default function Home() {
   return (
     <Layout title="Abhay Ojha">
       <Hero />
 
-      <Section title="💼 Experience">
+      <PageSection title="💼 Experience">
         <div className="row row--center">
           <div className="col col--12">
             <ExperienceCard
@@ -26,9 +27,9 @@ export default function Home() {
             />
           </div>
         </div>
-      </Section>
+      </PageSection>
 
-      <Section title="🎓 Education">
+      <PageSection title="🎓 Education">
         <div className="row row--center">
           <div className="col col--6">
             <EducationCard
@@ -56,7 +57,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </Section>
+      </PageSection>
     </Layout>
   );
 }
