@@ -35,7 +35,7 @@ export default function Home() {
               degree="M.Tech – Computer Science & Information Security"
               institute="NIT Warangal"
               duration="2023 – 2025"
-              score="CGPA: 9.13"
+              score="9.13"
               // details={[
               //   "Focus on Security, Trust Models, and Machine Learning",
               //   "Coursework: Advanced OS, Cryptography, Network Security",
@@ -48,7 +48,7 @@ export default function Home() {
               degree="B.Tech – Computer Science & Engineering"
               institute="RGPV"
               duration="2019 – 2023"
-              score="CGPA: 8.83"
+              score="8.83"
               // details={[
               //   "Strong foundation in DSA, DBMS, and OS",
               //   "Final year project on security systems",

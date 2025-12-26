@@ -1,34 +1,65 @@
-import React from 'react';
+import React from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaEnvelope
+} from "react-icons/fa";
+
+import "./hero.css";
 
 export default function Hero() {
   return (
-    <header className="hero hero--secondary">
-      <div className="container text--center">
+    <header className="hero-section">
+      <div className="container hero-container">
 
-        <h1 className="hero__title">Abhay Ojha</h1>
+        {/* Left: Profile Image */}
+        <div className="hero-image">
+          <img
+            src="/img/myimg.jpg"
+            alt="Abhay Ojha"
+          />
+        </div>
 
-        <p className="hero__subtitle">
-          Software Engineer • M.Tech (CS & Information Security)
-        </p>
+        {/* Right: Content */}
+        <div className="hero-content">
+          <h1 className="hero-title">Abhay Ojha</h1>
 
-        <p className="margin-vert--md">
-          I build systems, work on security & automation, and write about what I learn.
-        </p>
+          <h2 className="hero-subtitle">
+            Software Engineer • M.Tech (CS & Information Security)
+          </h2>
 
-        <div className="margin-top--lg">
-          {/* <a
-            className="button button--secondary button--lg margin-right--md"
-            href="/projects"
-          >
-            View Projects
-          </a> */}
+          <p className="hero-description">
+            I build scalable systems, work on security & automation,
+            and share practical learnings through blogs and teaching.
+          </p>
 
-          <a
-            className="button button--outline button--secondary button--lg"
-            href="/blog"
-          >
-            Read Blog
-          </a>
+          {/* Social Icons */}
+          <div className="hero-socials">
+            <a href="https://github.com/abojha" target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://linkedin.com/in/abojha" target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
+            <a href="https://instagram.com/abojha404" target="_blank" rel="noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="mailto:abhayojha0012@gmail.com">
+              <FaEnvelope />
+            </a>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="hero-actions">
+            <a className="button button--primary button--lg" href="/blog">
+              Read Blog
+            </a>
+
+            {/* <a className="button button--outline button--secondary button--lg" href="/docs">
+              View Notes
+            </a> */}
+          </div>
         </div>
 
       </div>

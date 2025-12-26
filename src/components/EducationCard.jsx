@@ -24,7 +24,7 @@ export default function EducationCard({
         {/* Score / CGPA */}
         {score && (
           <p className="text--small margin-bottom--sm">
-            <strong>Score:</strong> {score}
+            <strong>CGPA:</strong> {score}
           </p>
         )}
 
