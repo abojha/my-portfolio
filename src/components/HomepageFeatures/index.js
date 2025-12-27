@@ -6,7 +6,7 @@ import Link from "@docusaurus/Link";
 const FeatureList = [
   {
     title: "My Research",
-    link: "docs/category/my-research",
+    // link: "docs/category/my-research",
     Svg: require("@site/static/img/research.svg").default,
     description: (
       <>
@@ -19,7 +19,7 @@ const FeatureList = [
   },
   {
     title: "Projects",
-    link: "docs/category/projects",
+    // link: "docs/category/projects",
     Svg: require("@site/static/img/project.svg").default,
     description: (
       <>
@@ -32,7 +32,7 @@ const FeatureList = [
   },
   {
     title: "Tools & Code",
-    link: "docs/category/tools",
+    // link: "docs/category/tools",
     Svg: require("@site/static/img/code.svg").default,
     description: (
       <>
