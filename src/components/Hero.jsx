@@ -49,17 +49,6 @@ export default function Hero() {
               <FaEnvelope />
             </a>
           </div>
-
-          {/* CTA Buttons */}
-          <div className="hero-actions">
-            <a className="button button--primary button--lg" href="/blog">
-              Read Blog
-            </a>
-
-            {/* <a className="button button--outline button--secondary button--lg" href="/docs">
-              View Notes
-            </a> */}
-          </div>
         </div>
 
       </div>
